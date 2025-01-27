@@ -6,43 +6,60 @@
     <title>Columbia Poker Club</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
 
         header {
-            background-color: #0044cc;
+            background: linear-gradient(135deg, #86a7e4, #86a7e4);
             color: white;
-            padding: 1rem;
+            padding: 2rem;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav {
-            background-color: #002a80;
             display: flex;
             justify-content: center;
-            padding: 0.5rem 0;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav a {
-            color: white;
+            color: #86a7e4;
             text-decoration: none;
             margin: 0 1rem;
-            font-weight: bold;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         nav a:hover {
-            text-decoration: underline;
+            background-color: #86a7e4;
+            color: white;
         }
 
         section {
-            padding: 2rem;
+            padding: 3rem 1.5rem;
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #002a80;
+            background-color: #86a7e4;
             color: white;
             padding: 1rem;
             text-align: center;
@@ -57,6 +74,34 @@
 
         .tab-content.active {
             display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f4f4f4;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        a {
+            color: #86a7e4;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -74,27 +119,27 @@
 
     <section id="home" class="tab-content active">
         <h2>About Us</h2>
-        <p></p>
-        <img src="tournament.png" alt="Campus life" style="width: 80%; max-width: 600px; border-radius: 10px;">
+        <p>Welcome to the Columbia Poker Club! We bring together poker enthusiasts to share, learn, and compete in the game we love. Check out our events and sponsors, and feel free to get in touch!</p>
+        <img src="tournament.png" alt="Poker Tournament">
     </section>
 
     <section id="events" class="tab-content">
         <h2>Upcoming Events</h2>
         <ul>
-            <li>Event 1: Date and details</li>
-            <li>Event 2: Date and details</li>
-            <li>Event 3: Date and details</li>
+            <li>Monthly Poker Night: January 15th, 2025</li>
+            <li>Beginner Poker Workshop: February 10th, 2025</li>
+            <li>Annual Poker Tournament: March 20th, 2025</li>
         </ul>
     </section>
 
     <section id="sponsors" class="tab-content">
         <h2>Our Sponsors</h2>
-        <p>We are grateful for the support of our amazing sponsors:</p>
+        <p>We are proud to be supported by our amazing sponsors:</p>
         <ul>
-            <li>Jane Street: Jane Street is a quantitative trading firm that uses innovative technology, a scientific approach and a deep understanding of markets to guide our business. The markets change rapidly, and we need to change faster still. Every day, we come to work with new problems to solve, new systems to build and new theories to test. We’re always looking for people to join us and help come up with that next great idea</li>
-            <img src="logo_horizontal_black_registered - Copy - Copy.png" alt="Campus life" style="width: 80%; max-width: 600px; border-radius: 10px;">
-            <li>Sponsor 2: Description</li>
-            <li>Sponsor 3: Description</li>
+            <li>Jane Street: Jane Street is a quantitative trading firm that uses innovative technology and a deep understanding of markets to excel. Join us in building the future!</li>
+            <img src="logo_horizontal_black_registered - Copy - Copy.png" alt="Jane Street Logo">
+            <li>Sponsor 2: Description of their contribution and partnership.</li>
+            <li>Sponsor 3: Description of their contribution and partnership.</li>
         </ul>
     </section>
 
