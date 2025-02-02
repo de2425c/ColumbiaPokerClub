@@ -16,7 +16,7 @@ function About() {
         <h1 className="text-4xl sm:text-7xl font-extrabold">History</h1>
         <p className="text-xl sm:text-3xl max-w-4xl mt-6">
           Established in 2022, the Columbia Poker Club started as a small
-          gathering of students passionate about the game. Over the years, we
+          gathering of students passionate about the game. Over the past few years, we
           have grown into a thriving community that organizes tournaments,
           strategy workshops, and social poker nights.
         </p>
